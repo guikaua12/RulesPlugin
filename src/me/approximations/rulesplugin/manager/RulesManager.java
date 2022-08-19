@@ -74,6 +74,7 @@ public class RulesManager {
         return new ItemBuilder(cfg.getBoolean("CustomSkull") ? Utils.getHeadUrl(cfg.getString("Url")) : new ItemStack(Material.valueOf(ms[0]), 1, Byte.parseByte(ms[1])))
                 .setName(cfg.getString("Name").replace("&", "§"))
                 .setLore(cfg.getStringList("Lore").stream().map(s -> s.replace("&", "§")).collect(Collectors.toList()))
+                .setGlow(cfg.getBoolean("Glow"))
                 .toItemStack();
     }
 
@@ -83,6 +84,7 @@ public class RulesManager {
         return new ItemBuilder(cfg.getBoolean("CustomSkull") ? Utils.getHeadUrl(cfg.getString("Url")) : new ItemStack(Material.valueOf(ms[0]), 1, Byte.parseByte(ms[1])))
                 .setName(cfg.getString("Name").replace("&", "§"))
                 .setLore(cfg.getStringList("Lore").stream().map(s -> s.replace("&", "§")).collect(Collectors.toList()))
+                .setGlow(cfg.getBoolean("Glow"))
                 .toItemStack();
     }
 
