@@ -1,0 +1,4 @@
+name: RulesPlugin
+main: me.approximations.rulesplugin.Main
+version: 1.0
+author: Approximations
